@@ -1,0 +1,43 @@
+#include <stdio.h>
+
+int main()
+{
+float dataUsage;
+printf("Enter the data usage in GB: ");
+scanf("%f", &dataUsage);
+
+if (dataUsage <= 0.0)
+{
+printf("Invalid data usage. Please enter a valid number.\n");
+}
+else if (dataUsage <= 1.0)
+{
+printf("The charges to be paid by the subscriber are $250.\n");
+}
+else if (dataUsage <= 2.0)
+{
+printf("The charges to be paid by the subscriber are $500.\n");
+}
+else if (dataUsage < 4.0)
+{
+printf("The charges to be paid by the subscriber are $750.\n");
+}
+else if (dataUsage <= 6.0)
+{
+printf("The charges to be paid by the subscriber are $1000.\n");
+}
+else if (dataUsage <= 8.0)
+{
+printf("The charges to be paid by the subscriber are $1250.\n");
+}
+else if (dataUsage <= 10.0)
+{
+printf("The charges to be paid by the subscriber are $1500.\n");
+}
+else
+{
+printf("The charges to be paid by the subscriber are $2000.\n");
+}
+
+return 0;
+}
